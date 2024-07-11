@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saylani Form</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -81,8 +82,8 @@
                 <option value="Weekdays (Monday to Friday)">
                   Weekdays (Monday to Friday)
                 </option>
-                <option value="Weekend (Satu Sunday)">
-                  Weekend (Satu Sunday)
+                <option value="Weekend (Saturday & Sunday)">
+                  Weekend (Saturday & Sunday)
                 </option>
                 <option value="Both">Both</option>
               </select>
@@ -175,6 +176,7 @@
           <tr>
             <td colspan="4">
               <input
+                class="ok"
                 type="text"
                 id="Address"
                 name="Address"
@@ -189,7 +191,11 @@
           </tr>
           <tr>
             <td colspan="4">
-              <select name="Last qualification" id="Last qualification">
+              <select
+                class="ok"
+                name="Last qualification"
+                id="Last qualification"
+              >
                 <option value=""></option>
                 <option value="Matric">Matric</option>
                 <option value="Intermediate">Intermediate</option>
@@ -208,7 +214,11 @@
           </tr>
           <tr>
             <td colspan="4">
-              <select name="Do you have a Laptop?" id="Do you have a Laptop?">
+              <select
+                class="ok"
+                name="Do you have a Laptop?"
+                id="Do you have a Laptop?"
+              >
                 <option value=""></option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
@@ -224,7 +234,7 @@
             </td>
           </tr>
           <tr>
-            <td><input type="submit" /></td>
+            <td><input class="button" type="submit" /></td>
           </tr>
         </form>
       </table>
