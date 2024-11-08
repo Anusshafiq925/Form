@@ -3,40 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Saylani Form</title>
+    <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
+    <title>Saylani Form</title>
   </head>
 
   <body>
-    <p>
-      <center>Saylani Vocational and Technical Training</center>
-    </p>
-    <p>
-      <center>
+    <div class="container text-center">
+      <p>Saylani Vocational and Technical Training</p>
+      <p>
         Saylani Vocational and Technical Training Courses are now open, hurry up
         apply for brighter future!
-      </center>
-    </p>
-    <center>
-      <img src="./Assets/Header.PNG" alt="Image of Form Header" />
-    </center>
-    <center>
-      <table>
-        <form action="">
+      </p>
+      <img
+        class="img-fluid"
+        src="./Assets/Header.PNG"
+        alt="Image of Form Header"
+      />
+    </div>
+
+    <div class="container d-flex justify-content-center">
+      <form>
+        <table>
           <tr>
             <td colspan="2">
-              <label for="Select city"> Select city </label>
+              <label for="SelectCity"> Select city </label>
             </td>
             <td colspan="2">
-              <label for="Select course or event">
-                Select course or event
-              </label>
+              <label for="SelectCourse"> Select course or event </label>
             </td>
           </tr>
 
           <tr>
             <td colspan="2">
-              <select name="Select city" id="Select city">
+              <select name="Select city" id="SelectCity">
                 <option value=""></option>
                 <option value="Karachi">Karachi</option>
                 <option value="Islamabad">Islamabad</option>
@@ -44,7 +44,7 @@
               </select>
             </td>
             <td colspan="2">
-              <select name="Select course or event" id="Select course or event">
+              <select name="Select course or event" id="SelectCourse">
                 <option value=""></option>
                 <option value="Web Designing Course">
                   Web Designing Course
@@ -57,27 +57,22 @@
 
           <tr>
             <td colspan="2">
-              <label for="Select campus">Select campus</label>
+              <label for="SelectCampus">Select campus</label>
             </td>
             <td colspan="2">
-              <label for="Select class preference"
-                >Select class preference</label
-              >
+              <label for="SelectClassPreference">Select class preference</label>
             </td>
           </tr>
           <tr>
             <td colspan="2">
-              <select name="Select campus" id="Select campus">
+              <select name="Select campus" id="SelectCampus">
                 <option value=""></option>
                 <option value="Gulshan">Gulshan</option>
                 <option value="Bahadurabad">Bahadurabad</option>
               </select>
             </td>
             <td colspan="2">
-              <select
-                name="Select class preference"
-                id="Select class preference"
-              >
+              <select name="Select class preference" id="SelectClassPreference">
                 <option value=""></option>
                 <option value="Weekdays (Monday to Friday)">
                   Weekdays (Monday to Friday)
@@ -90,9 +85,9 @@
             </td>
           </tr>
           <tr>
-            <td colspan="2"><label for="Full name">Full name</label></td>
+            <td colspan="2"><label for="FullName">Full name</label></td>
             <td colspan="2">
-              <label for="Father name">Father name</label>
+              <label for="FatherName">Father name</label>
             </td>
           </tr>
           <tr>
@@ -100,7 +95,7 @@
               <input
                 type="text"
                 name="Full name"
-                id="Full name"
+                id="FullName"
                 placeholder="Full name"
               />
             </td>
@@ -108,20 +103,26 @@
               <input
                 type="text"
                 name="Father name"
-                id="Father name"
+                id="FatherName"
                 placeholder="Father name"
               />
             </td>
           </tr>
           <tr>
-            <td colspan="2"><label for="Email">Email</label></td>
+            <td colspan="2"><label for="email">Email</label></td>
             <td colspan="2">
               <label for="Phone">Phone</label>
             </td>
           </tr>
           <tr>
             <td colspan="2">
-              <input type="email" name="Email" id="Email" placeholder="Email" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                autocomplete="on"
+              />
             </td>
             <td colspan="2">
               <input
@@ -129,15 +130,14 @@
                 name="Phone"
                 id="Phone"
                 placeholder="Phone"
+                autocomplete="on"
               />
             </td>
           </tr>
           <tr>
             <td colspan="2"><label for="CNIC">CNIC</label></td>
             <td colspan="2">
-              <label for="Father's CNIC (optional)"
-                >Father's CNIC (optional)</label
-              >
+              <label for="FatherCNIC">Father's CNIC (optional)</label>
             </td>
           </tr>
           <tr>
@@ -148,7 +148,7 @@
               <input
                 type="number"
                 name="Father's CNIC (optional)"
-                id="Father's CNIC (optional)"
+                id="FatherCNIC"
                 placeholder="Father's CNIC (optional)"
               />
             </td>
@@ -181,12 +181,13 @@
                 id="Address"
                 name="Address"
                 placeholder="Address"
+                autocomplete="on"
               />
             </td>
           </tr>
           <tr>
             <td colspan="4">
-              <label for="Last qualification">Last qualification</label>
+              <label for="Lastqualification">Last qualification</label>
             </td>
           </tr>
           <tr>
@@ -194,7 +195,7 @@
               <select
                 class="ok"
                 name="Last qualification"
-                id="Last qualification"
+                id="Lastqualification"
               >
                 <option value=""></option>
                 <option value="Matric">Matric</option>
@@ -209,7 +210,7 @@
           </tr>
           <tr>
             <td colspan="4">
-              <label for="Do you have a Laptop?">Do you have a Laptop?</label>
+              <label for="DoyouhaveaLaptop">Do you have a Laptop?</label>
             </td>
           </tr>
           <tr>
@@ -217,7 +218,7 @@
               <select
                 class="ok"
                 name="Do you have a Laptop?"
-                id="Do you have a Laptop?"
+                id="DoyouhaveaLaptop"
               >
                 <option value=""></option>
                 <option value="Yes">Yes</option>
@@ -234,10 +235,19 @@
             </td>
           </tr>
           <tr>
-            <td><input class="button" type="submit" /></td>
+            <td colspan="4">
+              <button class="btn btn-primary w-100" onclick="submitform()">
+                Submit
+              </button>
+            </td>
           </tr>
-        </form>
-      </table>
-    </center>
+        </table>
+      </form>
+    </div>
+
+    <script src="pooper.js"></script>
+    <script src="bootstrapscript.js"></script>
+    <script src="bundle.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
